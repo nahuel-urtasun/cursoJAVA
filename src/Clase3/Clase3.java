@@ -1,5 +1,6 @@
 package src.Clase3;
-
+import src.Clase3.Calculadora;
+import src.Clase3.ParImpar;
 import java.util.Scanner;
 
 public class Clase3 {
@@ -23,9 +24,9 @@ public class Clase3 {
                         ParImpar.determinarParImpar(scanner); // Llamada a la clase ParImpar
                         break;
                     case 3:
-                        System.out.println("Saliendo del programa. ¡Hasta luego!");
+                        System.out.println("Saliendo del programa.");
                         scanner.close();
-                        return; // Salir del programa
+                        return;
                     default:
                         System.out.println("Opción no válida. Por favor, elige 1, 2 o 3.");
                         break;
