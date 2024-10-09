@@ -3,7 +3,7 @@ package Clase5;
 import java.util.Scanner;
 
 public class CalculadoraAreaPerimetro {
-    public static void calcular(Scanner scanner) {
+    public void calcular(Scanner scanner) {
         System.out.println("Seleccione una figura geométrica:");
         System.out.println("1. Círculo");
         System.out.println("2. Rectángulo");

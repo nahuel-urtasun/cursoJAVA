@@ -3,7 +3,7 @@ package Clase5;
 import java.util.Scanner;
 
 public class DiasDeLaSemana {
-    public static void mostrarDia(Scanner scanner) {
+    public void mostrarDia(Scanner scanner) {
         System.out.print("Ingrese un número del 1 al 7 para representar un día de la semana: ");
         int dia = scanner.nextInt();
 

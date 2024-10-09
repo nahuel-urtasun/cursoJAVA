@@ -1,17 +1,18 @@
 package Clase5;
-
-import Clase5.DiasDeLaSemana;
-import Clase5.ConversionCalificaciones;
-import Clase5.SeleccionOpcion;
-import Clase5.SeleccionFigura;
-import Clase5.VerificacionDiaHabil;
-import Clase5.CalculadoraAreaPerimetro;
-
+import Clase4.Descuento;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        DiasDeLaSemana diasDeLaSemana = new DiasDeLaSemana();
+        SeleccionOpcion seleccionOpcion = new SeleccionOpcion();
+        SeleccionFigura seleccionFigura = new SeleccionFigura();
+        VerificacionDiaHabil verificacionDiaHabil = new VerificacionDiaHabil();
+        CalculadoraAreaPerimetro calculadoraAreaPerimetro = new CalculadoraAreaPerimetro();
+        ConversionCalificaciones conversionCalificaciones = new ConversionCalificaciones();
+        Descuento descuento = new Descuento();
+
         int opcion;
 
         do {
@@ -22,31 +23,36 @@ public class Main {
             System.out.println("4. Selección de Figura Geométrica (Área)");
             System.out.println("5. Verificación de Día Hábil");
             System.out.println("6. Calculadora de Área y Perímetro");
-            System.out.println("7. Salir");
+            System.out.println("7. Descuento");
+            System.out.println("8. Salir");
             System.out.print("Seleccione una opción: ");
+
             opcion = scanner.nextInt();
+
             scanner.nextLine();
 
             switch (opcion) {
                 case 1:
-                    DiasDeLaSemana.mostrarDia(scanner);
+                    diasDeLaSemana.mostrarDia(scanner);
                     break;
                 case 2:
-                    ConversionCalificaciones.convertirCalificacion(scanner);
+                    conversionCalificaciones.convertirCalificacion(scanner);
                     break;
                 case 3:
-                    SeleccionOpcion.seleccionarOpcion(scanner);
+                    seleccionOpcion.seleccionarOpcion(scanner);
                     break;
                 case 4:
-                    SeleccionFigura.calcularArea(scanner);
+                    seleccionFigura.calcularArea(scanner);
                     break;
                 case 5:
-                    VerificacionDiaHabil.verificarDiaHabil(scanner);
+                    verificacionDiaHabil.verificarDiaHabil(scanner);
                     break;
                 case 6:
-                    CalculadoraAreaPerimetro.calcular(scanner);
+                    calculadoraAreaPerimetro.calcular(scanner);
                     break;
                 case 7:
+                    descuento.calcularDescuento(scanner);
+                case 8:
                     System.out.println("Saliendo del programa.");
                     break;
                 default:
@@ -54,7 +60,7 @@ public class Main {
             }
 
             System.out.println();
-        } while (opcion != 7);
+        } while (opcion != 8);
 
         scanner.close();
     }

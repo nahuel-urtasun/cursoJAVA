@@ -3,7 +3,7 @@ package Clase5;
 import java.util.Scanner;
 
 public class SeleccionFigura {
-    public static void calcularArea(Scanner scanner) {
+    public void calcularArea(Scanner scanner) {
         System.out.println("Seleccione una figura geométrica:");
         System.out.println("1. Círculo");
         System.out.println("2. Cuadrado");

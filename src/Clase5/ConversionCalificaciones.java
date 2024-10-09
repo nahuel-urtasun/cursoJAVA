@@ -3,7 +3,7 @@ package Clase5;
 import java.util.Scanner;
 
 public class ConversionCalificaciones {
-    public static void convertirCalificacion(Scanner scanner) {
+    public void convertirCalificacion(Scanner scanner) {
         System.out.print("Ingrese una calificación numérica del 1 al 5: ");
         int calificacion = scanner.nextInt();
 

@@ -3,7 +3,7 @@ package Clase4;
 import java.util.Scanner;
 
 public class Descuento {
-    public static void calcularDescuento(Scanner scanner) {
+    public void calcularDescuento(Scanner scanner) {
         System.out.print("Ingrese el precio del producto: ");
         double precio = scanner.nextDouble();
 

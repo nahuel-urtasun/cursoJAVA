@@ -3,7 +3,7 @@ package Clase5;
 import java.util.Scanner;
 
 public class SeleccionOpcion {
-    public static void seleccionarOpcion(Scanner scanner) {
+    public void seleccionarOpcion(Scanner scanner) {
         System.out.println("Menú de Opciones:");
         System.out.println("1. Guardar");
         System.out.println("2. Cargar");

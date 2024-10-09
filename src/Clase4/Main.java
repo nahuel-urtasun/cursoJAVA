@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Descuento descuento = new Descuento();
         int opcion;
 
         do {
@@ -37,7 +38,7 @@ public class Main {
                     Contrasenia.verificarContrasenia(scanner);
                     break;
                 case 4:
-                    Descuento.calcularDescuento(scanner);
+                    descuento.calcularDescuento(scanner);
                     break;
                 case 5:
                     Edades.determinarEdad(scanner);
