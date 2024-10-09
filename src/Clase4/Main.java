@@ -1,4 +1,10 @@
 package Clase4;
+import Clase4.Calificacion;
+import Clase4.Divisibilidad;
+import Clase4.Contrasenia;
+import Clase4.Descuento;
+import Clase4.Edades;
+import Clase4.Numeros;
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +20,11 @@ public class Main {
             System.out.println("3. Verificación de Contraseña");
             System.out.println("4. Cálculo de Descuento");
             System.out.println("5. Determinación de Edades");
-            System.out.println("6. Salir");
+            System.out.println("6. Clasificación de Números");  // Nueva opción en el menú
+            System.out.println("7. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
             scanner.nextLine();
-
 
             switch (opcion) {
                 case 1:
@@ -37,6 +43,9 @@ public class Main {
                     Edades.determinarEdad(scanner);
                     break;
                 case 6:
+                    Numeros.clasificarNumero(scanner);
+                    break;
+                case 7:
                     System.out.println("Saliendo del programa");
                     break;
                 default:
@@ -44,7 +53,7 @@ public class Main {
             }
 
             System.out.println();
-        } while (opcion != 6);
+        } while (opcion != 7);
 
         scanner.close();
     }

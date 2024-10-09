@@ -8,7 +8,7 @@ public class Divisibilidad {
         int numero = scanner.nextInt();
 
 
-        if (numero % 5 == 0 && numero % 3 == 0) {
+        if (numero % 15 == 0) {
             System.out.println("El número es divisible por 3 y por 5.");
         } else if (numero % 5 == 0) {
             System.out.println("El número es divisible por 5.");
